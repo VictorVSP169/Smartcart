@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="css/style-pagamento.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="container">
+            <div class="verde">
+                <h1>QUANTIDADE E DETALHES</h1>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <img class="img" src="imagens/arroz.png" alt="Arroz">
+                    <p>R$: <span class="price">6.25</span></p>
+                    <div class="control">
+                        <button class="btn" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="0" min="0" readonly>
+                        <button class="btn" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+                <h1>+</h1>
+                <div class="box">
+                    <img class="img" src="imagens/oleo.png" alt="Óleo">
+                    <p>R$: <span class="price">7.50</span></p>
+                    <div class="control">
+                        <button class="btn" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="0" min="0" readonly>
+                        <button class="btn" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+                <h1>+</h1>
+                <div class="box">
+                    <img class="img" src="imagens/amaciante.png" alt="Amaciante">
+                    <p>R$: <span class="price">24.90</span></p>
+                    <div class="control">
+                        <button class="btn" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="0" min="0" readonly>
+                        <button class="btn" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+                <h1>+</h1>
+                <div class="box">
+                    <img class="img" src="imagens/doritos.png" alt="Doritos">
+                    <p>R$: <span class="price">8.30</span></p>
+                    <div class="control">
+                        <button class="btn" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="0" min="0" readonly>
+                        <button class="btn" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="botton">
+                <a href="telafinal.html" onclick="saveTotal()">
+                    <h1>VALOR TOTAL DA COMPRA R$: <span id="total">0.00</span></h1>
+                </a>
+            </div>
+            <h1 class="text">Clique no valor total para continuar com o pagamento.</h1>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

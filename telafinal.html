@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCart - Finalização</title>
+    <link rel="stylesheet" href="css/style-final.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="container">
+            <div class="verde">
+                <h1>Formas de Pagamento</h1>
+            </div>
+            <div class="botton">
+                <h1>VALOR TOTAL DA COMPRA R$: <span id="total-compra">0.00</span></h1>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <img src="imagens/pix.png" alt="Pix">
+                    <p>Pix 5% de desconto.</p>
+                </div>
+                <div class="box">
+                    <img src="imagens/cartao.png" alt="Cartão">
+                    <p>Cartão em até <br> 5x sem juros.</p>
+                </div>
+                <div class="box">
+                    <img src="imagens/dinheiro.png" alt="Dinheiro">
+                    <p>Dinheiro em espécie.</p>
+                </div>
+            </div>
+            <h1 class="text">Clique no ícone para continuar com o pagamento.</h1>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const totalCompra = localStorage.getItem('totalCompra');
+            document.getElementById('total-compra').innerText = totalCompra ? totalCompra : '0.00';
+        });
+    </script>
+</body>
+</html>

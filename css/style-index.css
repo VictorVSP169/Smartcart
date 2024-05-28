@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3; /* Cor de fundo cinza */
+    width: 100%;
+    height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+.container{
+    width: 950px;
+    height: 600px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    border-radius: 20px;
+}
+
+.verde{
+    height: 100%;
+    width: 40%;
+    background-color: #00FFB2;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.verde h1{
+    padding-top: 80px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.verde p{
+    padding-top: 70px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.botao{
+    width: 145px;
+    height: 40px;
+    background-color: black;
+    border: 4px solid #fff;
+    border-radius: 20px; /* Bordas arredondadas para o formato cilíndrico */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* Centralizar horizontalmente e adicionar margem superior */
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.boxes{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boxes h1{
+    color: #00FFB2;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.box{
+    width: 101px;
+    height: 183px;
+    background-color: #d9d9d9;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img{
+    width: 85px;
+}
+
+.box p{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+span{
+    color: red;
+}
+
+.botton{
+    width: 320px;
+    height: 40px;
+    background-color: black;
+    border: 4px solid #00FFB2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    color: #fff;
+    font-weight: 900;
+}
